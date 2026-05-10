@@ -1,0 +1,19 @@
+{
+  "name": "litvm-farmer",
+  "version": "0.3.0",
+  "description": "Multi-dApp interaction script for LitVM LiteForge testnet (Chain ID 4441)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "bridge": "node actions/bridge.js",
+    "lend": "node actions/lend.js",
+    "swap": "node actions/swap.js",
+    "balance": "node utils/balance.js",
+    "verify": "node utils/verify-network.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
+  }
+}
